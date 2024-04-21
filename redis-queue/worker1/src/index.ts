@@ -11,7 +11,7 @@ const client = createClient();
             while (1) {
                 const key = await client.brPop("jobs", 0);
                 console.log(key);
-                await new Promise(r => setTimeout(r, 1000));
+                await new Promise(r => setTimeout(r, 4000));
             }
 
 
